@@ -1,0 +1,36 @@
+.top p {
+    text-align: center;
+    color: #e8e8e8;
+    font-size: 1.5em;
+
+}
+
+.blogs {
+    display: flow-root;
+    margin-inline: 50px;
+}
+
+.blogs h2,p{
+    color: #e8e8e8;
+}
+
+#healthhub img {
+    width: 250px;
+    float: right;
+    margin-inline: 15px;
+    margin-bottom: 15px;
+}
+
+#lifestyleandwellness img {
+    width: 250px;
+    float: right;
+    margin-inline: 15px;
+    margin-bottom: 15px;
+}
+
+#alternativemedicine img {
+    width: 250px;
+    float: left;
+    margin-inline: 15px;
+    margin-bottom: 15px;
+}

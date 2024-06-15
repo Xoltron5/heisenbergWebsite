@@ -1,0 +1,21 @@
+#askquestions h2,p {
+    color: #e8e8e8;    
+    text-align: center;
+}
+
+#qnaportal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#comment {
+    color: #e8e8e8;
+    border: 1px solid;
+}
+
+#submit{
+    color: #e8e8e8;
+    border: 1px solid;
+}

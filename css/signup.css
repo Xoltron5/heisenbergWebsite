@@ -1,0 +1,27 @@
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signupform {
+    display: flex;
+    row-gap: 2vw;
+    flex-direction: column;
+}
+
+#header2,p {
+    color: #e8e8e8;
+    font-size: 2vw;
+}
+.signupform input,button {
+    color: #e8e8e8;
+    border: 1px solid #e8e8e8;
+}
+
+#submit:hover {
+    background-color: #e8e8e8;
+    color: #6c6b6b;
+    transition: 0.25s;
+}

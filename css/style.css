@@ -1,0 +1,174 @@
+* {
+    background-color: #212121;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.header { 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+}
+
+.headerbuttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 5vw;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.topheader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 5vw;
+    margin-top: 40px;
+}
+
+#logo {
+    width: 5vw;
+    margin-left: 35px;
+}
+
+.mainbuttons {
+    font-size: 4vw;
+    padding: 0.8em 1.0em;
+    border: 2px solid #212121;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #e8e8e8;
+}
+
+.mainbuttons::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #e8e8e8;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+   
+.mainbuttons:hover::before {
+    width: 105%;
+}
+   
+.mainbuttons:hover {
+    color: #111;
+}
+
+.profilebutton {
+    font-size: 17px;
+    background: transparent;
+    border: none;
+    padding: 1em 1.5em;
+    color: #e8e8e8;
+    text-transform: uppercase;
+    position: relative;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+  
+.profilebutton::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: #e8e8e8;
+    transition: 0.5s ease;
+}
+  
+.profilebutton:hover::before {
+    width: 100%;
+}
+  
+.accountactions {
+    margin-top: 50px;
+}
+
+.profilebutton::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    background-color: #e8e8e8;
+    transition: 0.4s ease;
+    z-index: -1;
+}
+  
+.profilebutton:hover::after {
+    height: 100%;
+    transition-delay: 0.4s;
+    color: aliceblue;
+}
+  
+@media (max-width: 1024px) {
+    .logo {
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    .profilebutton {
+        font-size: 2vw; /* Even larger font size for small devices */
+        padding: 1.5vw 3vw; /* Increase padding */
+        margin-top: 75px; /* Adjust margin for smaller screens */
+    }
+    .logo {
+        font-size: 11vw;
+        margin-left: 15px;
+    }
+    #logo {
+        width: 12vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .profilebutton {
+        font-size: 3.5vw; /* Larger font size for very small devices */
+        padding: 2vw 4vw; /* Further increase padding */
+        margin-top: 50px; /* Further adjust margin for very small screens */
+        margin-right: 10px;
+    }
+    .logo {
+        margin-left: 25px;
+        font-size: 11vw;
+    }
+    #logo {
+        width: 12vw;
+    }
+}
+
